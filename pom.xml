@@ -80,3 +80,18 @@
   </build>
 </project>
 
+<profile>
+     <id>spring-deploy</id>
+ <distributionManagement>
+    <repository>
+      <id>spring-releases</id>
+      <name>spring-releases</name>
+      <url>gs://cicd_artifact_dir/repository/</url>
+    </repository>
+    <snapshotRepository>
+      <id>spring-snapshots</id>
+      <name>spring-snapshots</name>
+      <url>gs://cicd_artifact_dir/snapshot-repository/</url>
+    </snapshotRepository>
+  </distributionManagement>
+</profile>
